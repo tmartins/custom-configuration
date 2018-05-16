@@ -1,0 +1,8 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: org.nuxeo.support
+Bundle-Version: 1.0.0
+Bundle-Name: custom-configuration-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.nuxeo.support.custom-configuration-core;singleton=true

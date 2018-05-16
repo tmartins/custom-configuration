@@ -1,7 +1,7 @@
 ## Edit this file to customize your configuration ##
-#custom-conf.target=
+#customconf.target=
 
 # Set list of templates to include, comma separated values.
 nuxeo.template.includes=common
 
-# org.nuxeo.ecm.instance.description=Nuxeo ECM customized with custom-conf
+# org.nuxeo.ecm.instance.description=Nuxeo ECM customized with customconf
