@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.sharp.versoningConfig">
+  <require>org.nuxeo.ecm.core.versioning.default-policies</require>
+    <extension target="org.nuxeo.ecm.core.versioning.VersioningService" point="policies">
+        <policy id="custom-version-intial-policy" order="1" increment="MAJOR" beforeUpdate="true">
+            <!-- <initialState major="0" minor="0" /> -->
+            <filter-id>custom-document-only</filter-id>
+            <filter-id>avoid-thumbnail-version</filter-id>
+        </policy>
+    </extension>
+    <extension target="org.nuxeo.ecm.core.versioning.VersioningService" point="filters">
+        <filter id="custom-document-only">
+            <type>File</type>
+	    <type>Picture</type>
+                <type>Note></type>
+        </filter>
+        <filter id="avoid-thumbnail-version">
+            <condition>#{!currentDocument.contextData.thumbnailUpdated}</condition>
+        </filter>
+    </extension>
+</component>
