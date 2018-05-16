@@ -1,1 +1,1 @@
-NUXEO_PACKAGE_DIR=target/*.zip
+NUXEO_PACKAGE_DIR=custom-configuration-package/target/custom-configuration-package-*.zip
